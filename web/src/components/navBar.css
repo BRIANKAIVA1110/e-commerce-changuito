@@ -1,0 +1,20 @@
+.navBar{
+    padding: 10px 5px 10px 5px;
+    background-color: royalblue;
+    height: 40px;
+
+}
+.inputBuscar{
+    width: 250px;
+    height: 25px;
+    border-style: none;
+    border-radius: 3px;
+    margin: 2px;
+}
+
+.inputBtnBuscar{
+    width: 70px;
+    height: 30px;
+    border-radius: 3px;
+    border-style: none;
+}
