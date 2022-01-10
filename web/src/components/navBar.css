@@ -2,7 +2,8 @@
     padding: 10px 5px 10px 5px;
     background-color: royalblue;
     height: 40px;
-
+    display: flex;
+    justify-content: space-between;
 }
 .inputBuscar{
     width: 250px;
@@ -10,11 +11,46 @@
     border-style: none;
     border-radius: 3px;
     margin: 2px;
+    outline: none;
+    padding: 5px;
 }
 
 .inputBtnBuscar{
     width: 70px;
-    height: 30px;
+    height: 35px;
     border-radius: 3px;
     border-style: none;
+    outline: none;
+    background-color: gray;
+}
+
+.inputBtnBuscar:hover{
+    background-color: rgb(139, 139, 139);
+    cursor: pointer;
+}
+
+.inputBtnBuscar:active{
+    background-color:rgb(184, 184, 184);
+}
+
+.navBar_menu{
+    display: flex;
+}
+
+.navBar_menu > h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navBar_menu > a{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    background-image: url("../menu-icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px 25px;
+    width: 25px;
+    height: 25px;
+    text-decoration: none;
 }
