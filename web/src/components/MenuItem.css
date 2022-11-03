@@ -1,9 +1,0 @@
-.menuItem > a{
-    text-decoration: none;
-    color: cornsilk;
-    margin: 10px;
-}
-
-.menuItem > a:hover{
-    color: darkgray;
-}
