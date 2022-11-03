@@ -1,0 +1,28 @@
+.menu{
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+@keyframes menuItemLink {
+    from{
+        color: blanchedalmond;
+    }
+    to{
+        color: black;
+    }
+} 
+
+.menu a{
+    text-decoration: none;
+    color: blanchedalmond;
+    margin-right: 10px;
+}
+
+.menu a:hover{
+    animation:  menuItemLink;
+    animation-duration: 0.3s; /*tiempo en la que se tiene que reproducir la animacion*/
+    animation-fill-mode: forwards;/*para que mantenga su ultimo valor fotograma(negro)*/
+}

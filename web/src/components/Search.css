@@ -1,0 +1,18 @@
+.search{
+    height: 35px;
+    display: flex;
+    
+}
+.search > input[type="search"]{
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    width: 300px;
+    height: 35px;
+    padding: 5px 10px;
+    outline: none;
+}
+.search > button{
+    width: 55px;
+    height: 35px;
+    border: none;
+}
