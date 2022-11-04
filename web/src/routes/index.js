@@ -1,11 +1,12 @@
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
-import Home from '../views/Home';
-
+import Main from '../layout/Main';
 export default function Routes() {
 
  const router = createBrowserRouter(
   createRoutesFromElements(
-   <Route path='/' element={<Home />} />
+   <Route path='/' element={<Main />}>
+    
+   </Route>
   )
  );
 
