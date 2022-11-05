@@ -83,3 +83,28 @@ a {
     font-size: 15px;
     text-transform: uppercase;
    }
+
+@media all and (max-width:978px) {
+  .menu,.menu-nav-bar {
+    display: flex;
+    flex-flow: column;
+    min-height: 70px;
+    }
+    
+    .logo {
+      margin-left: 15px;
+    }
+    .search-bar {
+      justify-content: center;
+      align-items: center;
+    }
+    .off  {
+      display: none;
+    }
+}
+
+@media all and (max-width:637px)  {
+  .off  {
+      display: none;
+    }
+}

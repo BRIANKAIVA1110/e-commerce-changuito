@@ -20,11 +20,11 @@ export default function Navbar() {
      <a href="http://www.google.com">Brian Villaroel</a>
     </div>
     <nav className="nav">
-     <a href="http://www.google.com">Categorias</a>
-     <a href="http://www.google.com">Ofertas</a>
-     <a href="http://www.google.com">Historial</a>
-     <a href="http://www.google.com">Supermercado</a>
-     <a href="http://www.google.com">Ayuda</a>
+     <a className="off" href="http://www.google.com">Categorias</a>
+     <a className="off" href="http://www.google.com">Ofertas</a>
+     <a className="off" href="http://www.google.com">Historial</a>
+     <a className="off" href="http://www.google.com">Supermercado</a>
+     <a className="off" href="http://www.google.com">Ayuda</a>
     </nav>
    </div>
   </header>
