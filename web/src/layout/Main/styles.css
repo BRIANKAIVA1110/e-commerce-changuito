@@ -19,13 +19,15 @@ a {
   align-items: center;
  }
   .logo {
-   flex:1 1 auto;
+   flex:2 1 auto;
    text-align: right;
+   
   }
    .logo a {
     color:#fff;
     text-transform: uppercase;
     font-size: 25px;
+    font-weight: bold;
    }
   .search-bar {
    flex: 4 1 auto;
@@ -62,27 +64,49 @@ a {
   height: 40px;
   align-items: center;
  }
-  .user-info {
-   text-align: right;
-   flex:1 1 auto;
+  .menu-nav-bar-first-row {
+    flex:3 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
   }
-   .user-info a {
-    color:#fff;
-    text-transform: uppercase;
-    font-size: 15px;
-   }
-  .nav {
-   display: flex;
-   justify-content: flex-start;
-   margin-left: 12%;
-   flex:3 1 auto;
+    .user-info {
+    text-align: right;
+    flex:2 1 20%;
+    }
+    .user-info a {
+      color:#fff;
+      text-transform: uppercase;
+      font-size: 15px;
+    } 
+   
+    .nav {
+    display: flex;
+    justify-content: center;
+    flex:4 1 48%;
+    }
+    .nav a {
+      margin:10px;
+      color:#fff;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  
+  .menu-nav-bar-second-row {
+    flex:1 1 auto;
   }
-   .nav a {
-    margin:10px;
-    color:#fff;
-    font-size: 15px;
-    text-transform: uppercase;
-   }
+    .menu-nav-bar-second-row a i {
+      color: #fff;
+    }
+  
+@media all and (min-width:1647px){
+    .user-info {
+      text-align: right;
+      flex:2 1 23%;
+      }
+  }
 
 @media all and (max-width:978px) {
   .menu,.menu-nav-bar {
@@ -92,13 +116,21 @@ a {
     }
     
     .logo {
-      margin-left: 15px;
+      margin-left: 50px;
+      text-align: center;
+      width: 100%;
     }
     .search-bar {
       justify-content: center;
       align-items: center;
     }
     .off  {
+      display: none;
+    }
+    .menu-nav-bar {
+      min-height: 50px;
+    }
+    .nav {
       display: none;
     }
 }
