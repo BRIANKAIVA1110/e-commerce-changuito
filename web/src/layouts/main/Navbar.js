@@ -23,37 +23,38 @@ export default function NavBar() {
 
  return (
   <>
-    <div className="menu">
-        <div className="logo">
-        <Link to={`/`}>Changuito-Cart</Link>
-        </div>
-        <div className="search-bar">
-        <form action="#">
-        <input type="text"
-        placeholder="Buscar productos, marcas y mas..."
-        name="search"
-        onKeyDown={handleOnSearchKeyDown} />
-        <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-        </div>
+   <div className="menu-search">
+    <div className="logo">
+     <Link to={`/`}>Changuito-Cart</Link>
     </div>
-    <div className="menu-nav-bar">
-        <div className="menu-nav-bar-first-row">
-        <div className="user-info">
-        <Link to={`/`}>Brian Villaroel</Link>
-        </div>
-        <nav className="nav">
-        <Link className="off" to={'/'}>Categorias</Link>
-        <Link className="off" to={'/'}>Ofertas</Link>
-        <Link className="off" to={'/'}>Historial</Link>
-        <Link className="off" to={'/'}>Supermercado</Link>
-        <Link className="off" to={'/'}>Ayuda</Link>
-        </nav>
-        </div>
-        <div className="menu-nav-bar-second-row ">
-        <Link to={`/`} title="Carrito" className="off"><i class="fa fa-shopping-cart" aria-hidden="true"></i></Link>
-        </div>
+    <div className="search-bar">
+     <form action="#">
+      <input type="text"
+       placeholder="Buscar productos, marcas y mas..."
+       name="search"
+       onKeyDown={handleOnSearchKeyDown} />
+      <button type="submit"><i class="fa fa-search"></i></button>
+     </form>
     </div>
-   </>
+   </div>
+   <div className="menu-nav-bar">
+    <div className="nav">
+     <div className="nav-user">
+      <Link to={`/`}>Brian Villaroel</Link>
+     </div>
+     <div className="nav-menu">
+      <Link className="off" to={'/'}>Categorias</Link>
+      <Link className="off" to={'/'}>Ofertas</Link>
+      <Link className="off" to={'/'}>Historial</Link>
+      <Link className="off" to={'/'}>Supermercado</Link>
+      <Link className="off" to={'/'}>Ayuda</Link>
+
+     </div>
+     <div className="nav-cart">
+      <Link to={`/`} title="Carrito" className="off"><i class="fa fa-shopping-cart" aria-hidden="true"></i></Link>
+     </div>
+    </div>
+   </div>
+  </>
  )
 }

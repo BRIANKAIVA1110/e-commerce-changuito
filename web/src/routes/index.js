@@ -7,10 +7,9 @@ export default function Routes() {
  const router = createBrowserRouter(
   createRoutesFromElements(
    <Route path='/' element={<Main />}>
-        <Route path='search/:search' element={<DashBoardView/>} />
+     <Route path='search/:search' element={<DashBoardView/>} />
    </Route>
-  )
- );
+  ));
 
  return <RouterProvider router={router} />;
 }

@@ -1,19 +1,19 @@
 import { Outlet } from 'react-router-dom';
-import NavBar from '../main/Navbar'
+import NavBar from './NavBar'
+import './styles.css';
 
 export default function Main() {
- return (
-  <>
-    <header className="header">
-        <NavBar />
-    </header>
-    <main>
-        <section>
-            <Outlet />
-        </section>
-    </main>
-   <footer className="footer">
-   </footer>
-  </>
- )
+    return (
+        <>
+            <header>
+                <NavBar />
+            </header>
+            <main>
+                <section>
+                    <Outlet />
+                </section>
+            </main>
+            <footer />
+        </>
+    )
 }

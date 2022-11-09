@@ -1,6 +1,6 @@
 import './styles.css';
 
-export default function DashBoardView(){
+export default function DashBoardView() {
 
     return (
         <>
@@ -17,29 +17,29 @@ export default function DashBoardView(){
                     </form>
                 </div>
                 <div className="content-dashboard-resultsearch">
-                    <div className="item-result-search"/>
-                    <div className="item-result-search"/>
-                    <div className="item-result-search"/>
-                    <div className="item-result-search"/>
-                    <div className="item-result-search"/>
-                    <div className="item-result-search"/>
-                    <div className="item-result-search"/>
-                    <div className="item-result-search"/>
-                    <div className="item-result-search"/>
-                    <div className="item-result-search"/>
-                    <div className="item-result-search"/>
-                    <div className="item-result-search"/>
-                    <div className="item-result-search"/>
-                    <div className="item-result-search"/>
-                    <div className="item-result-search"/>
-                    <div className="item-result-search"/>
-                    <div className="item-result-search"/>
-                    <div className="item-result-search"/>
-                    <div className="item-result-search"/>
-                    <div className="item-result-search"/>
+                    <div className="item-result-search" />
+                    <div className="item-result-search" />
+                    <div className="item-result-search" />
+                    <div className="item-result-search" />
+                    <div className="item-result-search" />
+                    <div className="item-result-search" />
+                    <div className="item-result-search" />
+                    <div className="item-result-search" />
+                    <div className="item-result-search" />
+                    <div className="item-result-search" />
+                    <div className="item-result-search" />
+                    <div className="item-result-search" />
+                    <div className="item-result-search" />
+                    <div className="item-result-search" />
+                    <div className="item-result-search" />
+                    <div className="item-result-search" />
+                    <div className="item-result-search" />
+                    <div className="item-result-search" />
+                    <div className="item-result-search" />
+                    <div className="item-result-search" />
                 </div>
             </div>
-            
+
         </>
     );
 
