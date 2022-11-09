@@ -113,7 +113,7 @@ a {
   .menu,.menu-nav-bar {
     display: flex;
     flex-flow: column;
-    min-height: 70px;
+    min-height: 50px;
     }
     
     .logo {
@@ -121,16 +121,18 @@ a {
       text-align: center;
       width: 100%;
     }
+      .logo a {
+        font-size: 20px;
+      }
     .search-bar {
+      margin-top:4px;
       justify-content: center;
       align-items: center;
     }
     .off  {
       display: none;
     }
-    .menu-nav-bar {
-      min-height: 50px;
-    }
+   
     .nav {
       display: none;
     }
