@@ -1,5 +1,5 @@
 * {
- font-family:'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
  margin:0;
 }
 
@@ -10,7 +10,9 @@ a {
 .header {
  display: flex;
  flex-flow: column nowrap;
- background: #404258;
+ /* background: #404258; */
+ background:#24292E;
+ 
 }
  .menu {
   display: flex;
