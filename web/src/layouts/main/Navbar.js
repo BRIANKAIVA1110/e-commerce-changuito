@@ -18,8 +18,7 @@ export default function NavBar() {
 
   navigate(`search/${value}`);
   event.preventDefault();
-
- }
+}
 
  return (
   <>
@@ -52,6 +51,7 @@ export default function NavBar() {
      </div>
      <div className="nav-cart">
       <Link to={`/`} title="Carrito" className="off"><i class="fa fa-shopping-cart" aria-hidden="true"></i></Link>
+      <Link to={`/login`} title="Ingresa" className="off">Ingresá</Link>
      </div>
     </div>
    </div>
