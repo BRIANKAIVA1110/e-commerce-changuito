@@ -1,7 +1,7 @@
 import '../card/styles.css';
 
 export default function Card(props){
-    const {pathImg, details} = props;
+    const {pathImg, detail, price} = props;
     
     return (
         <>
@@ -12,11 +12,11 @@ export default function Card(props){
                 <div className="card-details">
                     <div>
                         <a href='#'>
-                            <span>Funda iphone 14 / plus / pro / pro max</span>
+                            <span>{ detail }</span>
                         </a>
                     </div>
                     <div>
-                        u$d 999,99
+                        <span>{ price }</span>
                     </div>
                 </div>
             </div>
