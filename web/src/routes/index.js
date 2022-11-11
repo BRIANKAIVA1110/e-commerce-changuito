@@ -1,14 +1,20 @@
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
-import Main from '../layouts/main';
-import DashBoardView from '../views/dashBoard'
+import MainLayuot from '../layouts/main';
+import Home from '../views/home';
+import SearchResult from '../views/searchResult'
+
 
 export default function Routes() {
 
  const router = createBrowserRouter(
   createRoutesFromElements(
-   <Route path='/' element={<Main />}>
-        <Route path='search/:search' element={<DashBoardView/>} />
-   </Route>
+     <>
+          <Route path='/' element={<MainLayuot />}>
+               <Route path='/' element={<Home/>} />
+               <Route path='search/:search' element={<SearchResult/>} />
+          </Route>
+          <Route path='/Login' element={<h1>Login</h1>} />
+     </>
   )
  );
 
