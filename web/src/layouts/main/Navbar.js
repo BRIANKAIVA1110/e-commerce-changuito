@@ -1,6 +1,6 @@
-import './main.css';
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import './styles.css';
 
 export default function NavBar() {
  const [search, setSearch] = useState('');
@@ -22,11 +22,11 @@ export default function NavBar() {
 
  return (
   <>
-   <div className="menu-search">
-    <div className="logo">
+   <div className="main-menu-search">
+    <div className="main-logo">
      <Link to={`/`}>Changuito-Cart</Link>
     </div>
-    <div className="search-bar">
+    <div className="main-search-bar">
      <form action="#">
       <input type="text"
        placeholder="Buscar productos, marcas y mas..."
@@ -36,12 +36,12 @@ export default function NavBar() {
      </form>
     </div>
    </div>
-   <div className="menu-nav-bar">
-    <div className="nav">
-     <div className="nav-user">
+   <div className="main-menu-nav-bar">
+    <div className="main-nav">
+     <div className="main-nav-user">
       <Link to={`/`}>Brian Villaroel</Link>
      </div>
-     <div className="nav-menu">
+     <div className="main-nav-menu">
       <Link className="off" to={'/'}>Categorias</Link>
       <Link className="off" to={'/'}>Ofertas</Link>
       <Link className="off" to={'/'}>Historial</Link>
@@ -49,9 +49,10 @@ export default function NavBar() {
       <Link className="off" to={'/'}>Ayuda</Link>
 
      </div>
-     <div className="nav-cart">
+     <div className="main-nav-cart">
       <Link to={`/`} title="Carrito" className="off"><i class="fa fa-shopping-cart" aria-hidden="true"></i></Link>
-      <Link to={`/login`} title="Ingresa" className="off">Ingresá</Link>
+      <Link to={`/access/register`} title="Ingresa" className="off">Creà tu cuenta</Link>
+      <Link to={`/access/login`} title="Ingresa" className="off">Ingresá</Link>
      </div>
     </div>
    </div>

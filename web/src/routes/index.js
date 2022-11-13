@@ -1,35 +1,36 @@
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 import Main from '../layouts/main';
+import Access from '../layouts/access';
 import DashBoardView from '../views/dashBoard'
 import Login from '../views/login';
+import Register from '../views/register';
 
 export default function Routes() {
 
-  /*
- const router = createBrowserRouter(
-  createRoutesFromElements(
-   <Route path='/' element={<Main />}>
-     <Route path='search/:search' element={<DashBoardView/>} />
-   </Route>
- 
-  ));
-  */
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main />,
-   
     children: [
       {
         path: "/search/:value",
         element: <DashBoardView/>,
-     
       },
-    ],
+    ]
   },
   {
-    path:"/login",
-    element:<Login/>
+    path:"access",
+    element:<Access/>,
+    children: [
+      {
+        path:"login",
+        element:<Login/>
+      },
+      {
+        path:"register",
+        element:<Register/>
+      }
+    ]
   }
 ]);
 

@@ -1,11 +1,11 @@
 import { Outlet } from 'react-router-dom';
 import NavBar from './NavBar'
-import './main.css';
+import './styles.css';
 
 export default function Main() {
     return (
         <>
-            <header>
+            <header className="main-header">
                 <NavBar />
             </header>
             <main>

@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './login.css';
+import './styles.css';
+
 
 export default function Login() {
 
@@ -16,7 +17,7 @@ export default function Login() {
 
   event.preventDefault();
   const { identification, password } = document.forms[0];
-  debugger;
+  
   if (identification.value != credentialsDB.identification){
    setErrorMsg({ name: 'identification', message: 'Invalid identification' });
   }
@@ -37,16 +38,10 @@ export default function Login() {
    <span>{errorMsg.message}</span>
   )
  
-
  return (
   <>
-   <div className="header">
-    <div className="logo">
-     <span>Changuito-Cart</span>
-    </div>
-   </div>
-   <div className="main">
-    <div className="login">
+   <div className="login-main">
+    <div className="login-form">
      <form onSubmit={handleSubmit}>
       <label>E-mail, teléfono o usuario</label>
       <input type="text" name="identification" required />
