@@ -55,7 +55,7 @@ export default function NavBar() {
        <>
         <Link to={`/`} title="Carrito" className="off"><i class="fa fa-shopping-cart" aria-hidden="true"></i></Link>
         <a onClick={() => {
-         deleteCookie('username');
+         deleteCookie("username");
          navigate(`/access/login`);
         }}>Cerrar sesión</a> 
        </>
