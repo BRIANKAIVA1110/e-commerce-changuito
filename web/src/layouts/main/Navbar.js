@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './styles.css';
+import useCookie from '../../hooks/cookie';
 
 export default function NavBar() {
- const [search, setSearch] = useState('');
  const navigate = useNavigate();
+ const { checkCookie, deleteCookie } = useCookie();
 
  const handleOnSearchKeyDown = (event) => {
 
@@ -50,9 +51,20 @@ export default function NavBar() {
 
      </div>
      <div className="main-nav-cart">
-      <Link to={`/`} title="Carrito" className="off"><i class="fa fa-shopping-cart" aria-hidden="true"></i></Link>
-      <Link to={`/access/register`} title="Ingresa" className="off">Creà tu cuenta</Link>
-      <Link to={`/access/login`} title="Ingresa" className="off">Ingresá</Link>
+      { checkCookie("username") ?
+       <>
+        <Link to={`/`} title="Carrito" className="off"><i class="fa fa-shopping-cart" aria-hidden="true"></i></Link>
+        <a onClick={() => {
+         deleteCookie('username');
+         navigate(`/access/login`);
+        }}>Cerrar sesión</a> 
+       </>
+       :
+       <>
+        <Link to={`/access/register`} title="Creà tu cuenta" className="off">Creà tu cuenta</Link>
+        <Link to={`/access/login`} title="Ingresa" className="off">Ingresá</Link>
+       </>
+      }     
      </div>
     </div>
    </div>

@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import useCookie from '../../hooks/cookie';
 import './styles.css';
-
 
 export default function Login() {
 
  const navigate = useNavigate();
  const [errorMsg, setErrorMsg] = useState({});
+ const { createCookie } = useCookie();
 
  const credentialsDB = {
   identification: 'changuito',
@@ -16,28 +17,30 @@ export default function Login() {
  const handleSubmit = (event) => {
 
   event.preventDefault();
+
   const { identification, password } = document.forms[0];
-  
-  if (identification.value != credentialsDB.identification){
+
+  if (identification.value != credentialsDB.identification) {
    setErrorMsg({ name: 'identification', message: 'Invalid identification' });
   }
-  else if (password.value != credentialsDB.password){
+  else if (password.value != credentialsDB.password) {
    setErrorMsg({ name: 'password', message: 'Invalid password' });
   }
-   
+
   else {
    setErrorMsg({});
+   createCookie('username', identification.value);
    navigate(`/`);
    return;
   }
  }
 
- const renderErrorMsg = (name) => 
-  
+ const renderErrorMsg = (name) =>
+
   name === errorMsg.name && (
    <span>{errorMsg.message}</span>
   )
- 
+
  return (
   <>
    <div className="login-main">
