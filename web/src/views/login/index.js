@@ -8,7 +8,7 @@ export default function Login() {
  const navigate = useNavigate();
  const [errorMsg, setErrorMsg] = useState({});
  const { createCookie } = useCookie();
-
+ 
  const credentialsDB = {
   identification: 'changuito',
   password: 'changuito'
@@ -17,21 +17,18 @@ export default function Login() {
  const handleSubmit = (event) => {
 
   event.preventDefault();
-
   const { identification, password } = document.forms[0];
-
+  
   if (identification.value != credentialsDB.identification) {
    setErrorMsg({ name: 'identification', message: 'Invalid identification' });
   }
   else if (password.value != credentialsDB.password) {
    setErrorMsg({ name: 'password', message: 'Invalid password' });
   }
-
   else {
    setErrorMsg({});
-   createCookie('username', identification.value);
+   createCookie("username", identification.value);
    navigate(`/`);
-   return;
   }
  }
 
