@@ -10,5 +10,17 @@
         "descripcion": "Peluche digimon 1gen",
         "pathImg": "../assets/images/producto-mock.png",
         "price": "$9.99,11"
+    },
+    {
+        "id": 1,
+        "descripcion": "Funda protector iPhone 14 plus/ pro/ pro max",
+        "pathImg": "../assets/images/producto-mock.png",
+        "price": "$9.99,50"
+    },
+    {
+        "id": 2,
+        "descripcion": "Peluche digimon 1gen",
+        "pathImg": "../assets/images/producto-mock.png",
+        "price": "$9.99,11"
     }
 ]
