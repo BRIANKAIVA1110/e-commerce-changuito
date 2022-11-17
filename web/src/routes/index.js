@@ -1,8 +1,9 @@
 import Main from '../layouts/main';
 import Access from '../layouts/access';
-import DashBoardView from '../views/dashBoard'
 import Login from '../views/login';
 import Register from '../views/register';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import SearchResult from '../views/searchResult';
 
 export default function Routes() {
 
@@ -13,7 +14,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/search/:value",
-        element: <DashBoardView/>,
+        element: <SearchResult/>,
       },
     ]
   },
