@@ -1,4 +1,3 @@
-import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 import Main from '../layouts/main';
 import Access from '../layouts/access';
 import DashBoardView from '../views/dashBoard'
@@ -33,6 +32,5 @@ const router = createBrowserRouter([
     ]
   }
 ]);
-
  return <RouterProvider router={router} />;
 }

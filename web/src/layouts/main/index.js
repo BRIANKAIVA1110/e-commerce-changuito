@@ -1,19 +1,13 @@
 import { Outlet } from 'react-router-dom';
-import NavBar from './Navbar';
-import './styles.css';
+import NavBar from '../../components/navBar'
 
-export default function Main() {
-    return (
-        <>
-            <header className="main-header">
-                <NavBar />
-            </header>
-            <main>
-                <section>
-                    <Outlet />
-                </section>
-            </main>
-            <footer />
-        </>
-    )
+export default function MainLayuot() {
+ return (
+  <>
+    <header className="header">
+        <NavBar />
+    </header>
+    <Outlet />
+  </>
+ )
 }
